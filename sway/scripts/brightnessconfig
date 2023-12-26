@@ -1,0 +1,6 @@
+#!/usr/bin/sh
+brightnessctl s $1
+if [ $(brightnessctl g) = "0" ]; then
+    brightnessctl s +5%
+fi
+
