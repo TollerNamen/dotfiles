@@ -1,0 +1,35 @@
+#
+# Window Config
+#
+
+#
+# Window Title Bar
+#
+	default_border none
+	default_floating_border none
+	#font pango:monospace 0
+	font pango:JetBrainsMono Nerd Font 12
+	titlebar_padding 1
+	titlebar_border_thickness 0
+	
+#
+# Gaps
+#
+	gaps inner 12
+	#gaps outer 12
+	#gaps top 12
+	#12
+	#gaps bottom 12
+	smart_gaps off
+#
+# Floating apps
+#
+# swaymsg -t get_tree | grep app_id
+#
+	for_window [app_id="ulauncher"]				floating enable, move position center
+	
+#
+# Opacity Setting
+#
+	for_window [class=".*"] opacity 1.0
+

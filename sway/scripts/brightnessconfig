@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+if [ $(brightnessctl g) = "1" ]; then
+    brightnessctl s +9%
+    echo here
+    exit
+fi
+brightnessctl s $1
+if [ $(brightnessctl g) = "0" ]; then
+    brightnessctl s +1%
+fi
+
