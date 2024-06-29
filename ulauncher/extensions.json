@@ -1,1 +1,16 @@
-{}
+{
+    "com.github.tuanpham-dev.ulauncher-better-calculator": {
+        "id": "com.github.tuanpham-dev.ulauncher-better-calculator",
+        "url": "https://github.com/tuanpham-dev/ulauncher-better-calculator",
+        "updated_at": "2024-06-30T01:04:27.006587",
+        "last_commit": "48f0592a2a8ac9ec2589a06b562141e1a2d9b25f",
+        "last_commit_time": "2023-04-24T13:55:30"
+    },
+    "com.github.1fexd.ulauncher-maven": {
+        "id": "com.github.1fexd.ulauncher-maven",
+        "url": "https://github.com/1fexd/ulauncher-maven",
+        "updated_at": "2024-06-30T01:11:55.024569",
+        "last_commit": "998c42acac256539f1e6203df8fc92c4c1104adf",
+        "last_commit_time": "2023-02-05T22:36:54"
+    }
+}
