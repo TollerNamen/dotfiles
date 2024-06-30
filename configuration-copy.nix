@@ -122,6 +122,7 @@
     sway = {
       enable = true;
       wrapperFeatures.gtk = true;
+      package = pkgs.swayfx;
     };
     waybar.enable = true;
     light.enable = true;

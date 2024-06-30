@@ -11,7 +11,7 @@ window#waybar {
     transition-property: background-color;
     transition-duration: .5s;
     border: 3px solid #9999ff;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
 window#waybar.hidden {
@@ -61,12 +61,13 @@ button:hover {
 
 #workspaces button {
     padding: 0 5px;
+    background-color: rgba(1, 0, 21, 1);
     /*
     background-color: transparent;
     color: #ffffff;
-    */
     border-top: 3px solid #9999ff;
     border-bottom: 3px solid #9999ff;
+    */
 }
 
 #workspaces button:hover {
@@ -122,10 +123,15 @@ button:hover {
 }
 
 /* If workspaces is the leftmost module, omit left margin */
+
 .modules-left > widget:first-child > #workspaces {
     margin-left: 0;
+    /*
+    */
+    border-top: 3px solid #9999ff;
+    border-bottom: 3px solid #9999ff;
     border-left: 3px solid #9999ff;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
 /* If workspaces is the rightmost module, omit right margin */
@@ -337,7 +343,10 @@ label:focus {
 
 #scratchpad {
     color: #ffffff;
+    /*
     background-color: #64727D;
+    */
+    background-color: rgba(1, 0, 21, 1);
     border-top: 3px solid #9999ff;
     border-bottom: 3px solid #9999ff;
 }

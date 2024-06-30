@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 width=$(swaymsg -t get_outputs | jq -r '.[] | select(.focused==true) | .current_mode.width')
 middle=$((width/2))
 echo $middle

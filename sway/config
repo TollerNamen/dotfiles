@@ -29,7 +29,8 @@ set $menu ulauncher
 #
 # output "BOE 0x099D Unknown" scale 1.0
 
-# wallpaper
+# Wallpaper
+output * bg $HOME/Pictures/Downloads/a2nga4jvjy291.png fill
 bindsym $mod+comma output * bg $HOME/Pictures/Downloads/a2nga4jvjy291.png fill
 bindsym $mod+m output * bg /run/current-system/sw/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 # Example configuration:
@@ -257,3 +258,8 @@ exec_always {
     gsettings set org.gnome.desktop.interface gtk-theme 'Sweet-Ambar-Blue-Dark-v40'
     gsettings set org.gnome.desktop.interface icon-theme 'Sweet-Purple'
 }
+
+#
+# SwayFX Config
+# 
+include $HOME/.config/sway/config.d/swayfx

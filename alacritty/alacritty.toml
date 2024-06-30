@@ -1,3 +1,6 @@
+import = [
+    "~/.config/alacritty/midnight-haze.toml"
+]
 
 [window]
 opacity = 0.80
