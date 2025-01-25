@@ -6,3 +6,8 @@
 # Rounded corners
 #
 	corner_radius 7
+
+#
+# Separators
+#
+#  	titlebar_separator enable

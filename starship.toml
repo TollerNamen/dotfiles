@@ -1,4 +1,4 @@
-format = "$username$hostname$all"
+format = "$username$hostname$os$time$all"
 
 [character]
 success_symbol = "[>](bold green)"
@@ -107,6 +107,11 @@ format = '\[[$symbol($version)]($style)\]'
 symbol = "deno "
 format = '\[[$symbol($version)]($style)\]'
 
+[directory]
+repo_root_style = 'yellow'
+read_only = ' (read only)'
+truncate_to_repo = false
+
 [docker_context]
 symbol = "docker "
 format = '\[[$symbol$context]($style)\]'
@@ -171,6 +176,11 @@ format = '\[[$symbol($version)]($style)\]'
 symbol = "hg "
 format = '\[[$symbol$branch]($style)\]'
 
+[hostname]
+ssh_only = false
+ssh_symbol = '\(ssh\)(fg:orange) '
+format = '\[[$ssh_symbol$hostname]($style)\]'
+
 [java]
 symbol = "java "
 format = '\[[$symbol($version)]($style)\]'
@@ -224,7 +234,8 @@ symbol = "ostk "
 format = '\[[$symbol$cloud(\($project\))]($style)\]'
 
 [os]
-format = '\[[$symbol]($style)\]'
+format = '\[[$symbol$version]($style)\]'
+disabled = false
 
 [package]
 symbol = "pkg "
@@ -291,10 +302,14 @@ symbol = "terraform "
 format = '\[[$symbol$workspace]($style)\]'
 
 [time]
-format = '\[[$time]($style)\]'
+format = '\[[$time]($style)\] '
+time_format = '%H:%M, %a %m %B'
+disabled = false
+style = 'blue bold'
 
 [username]
 format = '\[[$user]($style)\]'
+show_always = true
 
 [vagrant]
 symbol = "vagr "

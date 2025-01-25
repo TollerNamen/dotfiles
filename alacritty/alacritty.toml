@@ -1,10 +1,14 @@
 import = [
-    "~/.config/alacritty/midnight-haze.toml"
+    "~/.config/alacritty/themes/themes/github_dark_high_contrast.toml"
 ]
+    #"~/.config/alacritty/midnight-haze.toml"
 
 [window]
-opacity = 0.80
+opacity = 0.6
 blur = true
 
 [font]
 normal = { family = "JetBrainsMono NF", style = "ExtraBold" }
+
+[colors.primary]
+background = '#000000'

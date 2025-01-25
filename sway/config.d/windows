@@ -5,18 +5,35 @@
 #
 # Window Title Bar
 #
-	default_border none
-	default_floating_border none
+	default_border pixel 2
+	default_floating_border pixel 2
 	#font pango:monospace 0
 	font pango:JetBrainsMono Nerd Font 12
 	titlebar_padding 1
 	titlebar_border_thickness 0
+
+    set $white FFFFFF
+	# 0.80 opacity
+	set $transparent_white FFFFFFCC 
+	set $transparent_red F52023CC
+	set $blue 010015
+	set $transparent_blue 010015CC
+	set $yellow FFFF00
+	set $transparent 00000000
 	
+	set $unfocused $transparent_white $blue $transparent_white
+	client.unfocused $unfocused
+	client.focused_inactive $unfocused
+	client.focused_tab_title $unfocused
+
+	client.focused $transparent_white $white $transparent_blue $transparent_blue
+	client.urgent $transparent_red $transparent_red $white
+
 #
 # Gaps
 #
-	gaps inner 12
-	#gaps outer 12
+	gaps inner 10
+	gaps outer 2
 	#gaps top 12
 	#12
 	#gaps bottom 12
