@@ -1,5 +1,5 @@
 # dotfiles
-![image](https://github.com/TollerNamen/dotfiles/blob/e813398ae87c2d93d72e7e9d7847edd8192b9b6d/preview.png)
+![image](https://github.com/TollerNamen/dotfiles/blob/0544059fa9050e852a1f9b7f5affecfbab130df9/preview.png)
 
 Welp those are some files.
 Everything work in progress.
