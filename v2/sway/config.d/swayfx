@@ -1,0 +1,38 @@
+#
+# SwayFX Config
+#
+
+#
+# Rounded corners
+#
+	corner_radius 10
+
+#
+# Separators
+#
+#  	titlebar_separator enable
+
+#
+# Shadows
+#
+	shadows enable
+
+#
+# Waybar
+#
+#layer_effects "waybar" {
+#    blur enable;
+#	blur_brightness 2
+#    blur_xray enable;
+#    blur_ignore_transparent enable;
+#    shadows enable;
+#}
+
+#
+#
+#
+#	for_window [app_id="Alacritty"] {
+#		blur enable
+#		blur_saturation 0.5
+#		blur_radius 2
+#	}

@@ -1,0 +1,52 @@
+#
+# Window Config
+#
+
+#
+# Window Title Bar
+#
+	default_border pixel 4
+	default_floating_border pixel 4
+	#font pango:monospace 0
+	font pango:JetBrainsMono NF ExtraBold 18
+	titlebar_padding 1
+	titlebar_border_thickness 0
+	floating_minimum_size 150 x 100
+
+    set $white FFFFFF
+	# 0.80 opacity
+	set $transparent_white FFFFFFCC 
+	set $transparent_red F52023CC
+	set $blue 010015
+	set $transparent_blue 010015CC
+	set $yellow FFFF00
+	set $transparent 00000000
+	
+	set $unfocused $transparent_white $blue $transparent_white
+	client.unfocused $unfocused
+	client.focused_inactive $unfocused
+	client.focused_tab_title $unfocused
+
+	client.focused $transparent_white $white $transparent_blue $transparent_blue
+	client.urgent $transparent_red $transparent_red $white
+
+#
+# Gaps
+#
+	gaps inner 10
+	gaps outer 2
+	#gaps top 12
+	#gaps bottom 12
+	smart_gaps off
+#
+# Floating apps
+#
+# swaymsg -t get_tree | grep app_id
+#
+	for_window [app_id="ulauncher"]				floating enable, move position center
+	
+#
+# Opacity Setting
+#
+	for_window [class=".*"] opacity 1.0
+
