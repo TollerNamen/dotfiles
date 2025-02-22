@@ -1,7 +1,7 @@
 # Welcome to my dotfiles
 Seems like you stumbled across my configuration files. Have following along my very little ricing story on NixOS using SwayFx and Waybar.
 
-## Screenshots
+## History
 
 <details>
   <summary>Version 1: First Try</summary>
