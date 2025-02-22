@@ -30,17 +30,7 @@ output HDMI-A-1 {
 focus eDP-1
 
 # Wallpaper
-set $default_wallpaper $HOME/Pictures/Wallpapers/IMG_1313.JPG
-#set $default_wallpaper $HOME/Pictures/Downloads/dh-wallpapers/wallhaven-m3k6om.jpg
-#set $default_wallpaper $HOME/Pictures/Downloads/dh-wallpapers/wallhaven-nz9xg0.jpg
-#set $default_wallpaper $HOME/Pictures/Wallpapers/digital-digital-art-artwork-fantasy-art-drawing-hd-wallpaper-d8562dc820d0acd8506c415eb8e2a49a.jpg
-#set $default_wallpaper $HOME/Pictures/Downloads/wallhaven-rr13w1.png
-#set $default_wallpaper $HOME/Pictures/Downloads/schloss-karlsruhe-night-remastering-version-6c8843a5-1a8b-4e07-96be-07a1f5d03169.jpg
-
-output * bg $default_wallpaper fill
-bindsym $mod+comma output * bg $HOME/Pictures/Downloads/a2nga4jvjy291.png fill
-bindsym $mod+m output * bg $default_wallpaper fill
-#/run/current-system/sw/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg INSERT_YOUR_WALLPAPER fill
 
 ### Idle configuration
 #

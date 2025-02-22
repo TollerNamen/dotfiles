@@ -20,6 +20,26 @@ Seems like you stumbled across my configuration files. Have following along my v
 ![Screenshot](v2/preview.png)
 
   <p>You will see that the NixOS configuration changed quite a lot...</p>
+
+```
+etc_nixos
+├── channels.nix
+├── configuration.nix
+├── default.nix
+├── general
+│   ├── default.nix
+│   ├── graphics.nix
+│   ├── network.nix
+│   └── services.nix
+├── hardware-configuration.nix
+├── home
+│   └── default.nix
+├── tui-apps.nix
+├── users.nix
+└── wallpapers
+    └── wallhaven-p9dpgp.jpg
+```
+  <p>That is because I modularised it, setup the plan for migrating to home-manager, setup nvidia graphics for my main computer and installed for example steam for gaming and regreet as an alternative to tuigreet.</p>
 </details>
 
 
