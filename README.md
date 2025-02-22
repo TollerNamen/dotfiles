@@ -4,7 +4,7 @@ Seems like you stumbled across my configuration files. Have following along my v
 ## Screenshots
 
 <details>
-  <summary>Version 1</summary>
+  <summary>Version 1: First Try</summary>
   <p>First up with blue primary color, it is my first real try of ricing, which is why i dropped it mid completion in favour for v2.</p>
   
   
@@ -13,7 +13,7 @@ Seems like you stumbled across my configuration files. Have following along my v
 </details>
 
 <details>
-  <summary>Version 2</summary>
+  <summary>Version 2: Current</summary>
   <p>This is my second try, you may see that the files from the sway, fuzzel directories and waybar/config.jsonc are mostly if not the same compared to v1.
   With more experience i could get more working and i decided to go for a simple style setup, especially for waybar.</p>
 
@@ -22,7 +22,7 @@ Seems like you stumbled across my configuration files. Have following along my v
   <p>You will see that the NixOS configuration changed quite a lot...</p>
 
 ```
-etc_nixos
+v2/etc_nixos
 ├── channels.nix
 ├── configuration.nix
 ├── default.nix
