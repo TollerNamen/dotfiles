@@ -1,4 +1,5 @@
 # Welcome to my dotfiles
+Seems like you stumbled across my configuration files. Have following along my very little ricing story on NixOS using SwayFx and Waybar.
 
 ## Screenshots
 
@@ -18,6 +19,7 @@
 
 ![Screenshot](v2/preview.png)
 
+  <p>You will see that the NixOS configuration changed quite a lot...</p>
 </details>
 
 
