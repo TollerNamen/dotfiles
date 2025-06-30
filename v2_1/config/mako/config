@@ -1,0 +1,21 @@
+font=pango:JetBrainsMono NF ExtraBold 14
+markup=1
+
+background-color=#00000099
+text-color=#FFFFFFFF
+
+border-size=4
+border-color=#FFFFFFFF
+border-radius=10
+
+outer-margin=2
+
+width=400
+height=150
+
+[app-name=overlay]
+progress-color=source #FFFFFF99
+anchor=bottom-center
+outer-margin=0,0,250
+text-color=#000000FF
+font=pango:JetBrainsMono NF ExtraBold 20

@@ -1,0 +1,130 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: JetBrainsMono NF ExtraBold, Roboto, Helvetica, Arial, sans-serif;
+  font-size: 21px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+button {
+  margin: 3px;
+  padding: 3px;
+}
+
+tooltip {
+  background: rgba(0, 0, 0, 0.202);/*rgba(43, 48, 59, 0.5);*/
+  border: 4px solid white;
+  border-radius: 10px;
+}
+
+tooltip label {
+  color: white;
+}
+
+#workspaces button {
+  margin: 0;
+  padding: 0;
+
+  background: transparent;
+  color: #888888;
+}
+
+#workspaces button.focused {
+  color: white;
+}
+
+#mode,
+#clock,
+#battery,
+#pulseaudio,
+#temperature,
+#language,
+#backlight,
+#network,
+#tray,
+#custom-weather {
+  padding: 0 10px;
+}
+
+#scratchpad,
+#window {
+  margin-left: 6px;
+  margin-right: 6px;
+}
+
+#custom-weather.sunny {
+  color: rgb(215, 215, 0);
+}
+
+#custom-weather.lightrain {
+  color: lightblue;
+}
+
+#custom-weather.rain,
+#custom-weather.heavyrain {
+  color: blue;
+}
+
+#custom-weather.cloudy,
+#custom-weather.fog {
+  color: gray;
+}
+
+#window {
+  color: darkred;
+}
+
+#language {
+  color: cadetblue;
+}
+
+#pulseaudio {
+  color: darkcyan;
+}
+
+#network {
+  color: coral;
+}
+
+#temperature {
+  color: rgb(91, 191, 225);
+}
+
+#backlight {
+  color: rgb(255, 255, 61);
+}
+
+#clock {
+  color: aqua;
+}
+
+#battery {
+  color: rgb(147, 63, 225);
+}
+
+#battery.charging {
+  color: #26A65B;
+}
+
+@keyframes blink {
+  to {
+    color: white;
+  }
+}
+
+#battery.warning:not(.charging),
+#temperature.critical,
+#workspaces button.urgent,
+#mode {
+  color: #ff0000;
+  animation-name: blink;
+  animation-duration: 0.5s;
+  animation-timing-function: steps(2);
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}

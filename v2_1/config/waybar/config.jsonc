@@ -1,0 +1,181 @@
+// -*- mode: jsonc -*-
+{
+    "layer": "top",
+    "mode": "dock",
+    "position": "top", // (top|bottom|left|right)
+    "height": 40, // (to be removed for auto height)
+    "width": "auto",
+    "spacing": 3, // Gaps between modules
+    "margin": 0,
+    "fixed-center": true,
+    "reload_style_on_change": true,
+    "modules-left": [
+        "sway/workspaces",
+        "sway/mode",
+        "sway/scratchpad"
+    ],
+    "modules-center": [
+        "clock"
+    ],
+    "modules-right": [
+        "custom/weather",
+        "pulseaudio",
+        "temperature",
+        "network",
+        "backlight",
+        "battery",
+        "tray"
+    ],
+    "keyboard-state": {
+        "numlock": true,
+        "capslock": true,
+        "format": "{icon} {name}",
+        "format-icons": {
+            "locked": "",
+            "unlocked": ""
+        }
+    },
+    "sway/mode": {
+        "format": "<span style=\"italic\">{}</span>"
+    },
+    "sway/scratchpad": {
+        "format": "{icon} {count}",
+        "show-empty": false,
+        "format-icons": [
+            "",
+            ""
+        ],
+        "tooltip": true,
+        "tooltip-format": "{title}",
+        "rewrite": {
+            "(.*) - Mozilla Firefox": "🌎 $1"
+        }
+    },
+    "tray": {
+        "icon-size": 24,
+        "show-passive-items": true,
+        "spacing": 10
+    },
+    "clock": {
+        "interval": 1,
+        "format": "{:%A %d. %b %T}",
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "format": {
+                "today": "<span color='#ff5555'><b><u>{}</u></b></span>"
+            }
+        }
+    },
+    "temperature": {
+        // "thermal-zone": 2,
+        // "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+        "interval": 1000,
+        "critical-threshold": 80,
+        // "format-critical": "{temperatureC}°C {icon}",
+        "format": "{temperatureC}°C"
+        //"format-icons": ["", "", ""]
+    },
+    "backlight": {
+        // "device": "acpi_video1",
+        "format": "{icon}",
+        "tooltip-format": "{icon} {percent}",
+        "format-icons": [
+            "󰌶",
+            "󱩎",
+            "󱩏",
+            "󱩐",
+            "󱩑",
+            "󱩒",
+            "󱩓",
+            "󱩔",
+            "󱩕",
+            "󱩖",
+            "󰛨"
+        ]
+    },
+    "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{icon}",
+        "format-full": "{icon}",
+        "format-charging": "{icon} ",
+        "format-plugged": "{icon} ",
+        "format-alt": "{icon}",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    "power-profiles-daemon": {
+        "format": "{icon}",
+        "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+        "tooltip": true,
+        "format-icons": {
+            "default": "",
+            "performance": "",
+            "balanced": "",
+            "power-saver": ""
+        }
+    },
+    "network": {
+        "interval": 1000,
+        "format-wifi": "{icon}",
+        "format-ethernet": "{ipaddr}/{cidr} ",
+        "tooltip-format": "{essid}\n{ifname} via {gwaddr}\n{ipaddr}/{cidr}",
+        "format-linked": "{ifname} (No IP) ",
+        "format-disconnected": "󰤭",
+        "format-alt": "{essid}",
+        "format-icons": [
+            "󰤯",
+            "󰤟",
+            "󰤢",
+            "󰤥",
+            "󰤨"
+        ]
+    },
+    "pulseaudio": {
+        "format": "{icon} {format_source}",
+        "format-muted": " {format_source}",
+        "format-source": "",
+        "format-source-muted": " ",
+        "format-bluetooth": "{icon} {format_source}",
+        "format-bluetooth-muted": "{icon} {format_source}",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "󰋎",
+            "phone": " ",
+            "portable": " ",
+            "car": "",
+            "default": [
+                "",
+                "",
+                ""
+            ]
+        },
+        "tooltip-format": "{icon} {volume}%\n{format_source}",
+        "ignored-sinks": [
+            "Easy Effects Sink"
+        ]
+    },
+    "sway/window": {
+        "format": "{app_id}",
+        "max-length": 50,
+        "rewrite": {
+            "(?:.*\\.)+(?!.*\\.)([^.]+)": "$1"
+        }
+    },
+    "custom/weather": {
+        "format": "{}°C",
+        "tooltip": true,
+        "interval": 3600,
+        "exec": "wttrbar --date-format \"%d.%m.%Y\" -l de",
+        "return-type": "json"
+    }
+}

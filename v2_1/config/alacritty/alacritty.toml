@@ -1,0 +1,19 @@
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/github_dark_high_contrast.toml"
+]
+    #"~/.config/alacritty/midnight-haze.toml"
+
+[window]
+opacity = 0.6
+blur = true
+
+[font]
+normal = { family = "JetBrainsMono NF", style = "ExtraBold" }
+size = 15
+
+[colors.primary]
+background = '#000000'
+
+[terminal]
+shell = { program = '/run/current-system/sw/bin/bash', args = ['-c', 'fastfetch && exec bash'] }
