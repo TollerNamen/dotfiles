@@ -1,5 +1,5 @@
 # Welcome to my dotfiles
-Seems like you stumbled across my configuration files. Have following along my very little ricing story on NixOS using SwayFx and Waybar.
+Seems like you stumbled across my configuration files. Have fun following along my very little ricing story on NixOS using SwayFx and Waybar.
 
 ## History
 
